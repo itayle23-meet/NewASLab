@@ -1,9 +1,16 @@
 package com.example.as_lab;
 
+import com.google.firebase.database.IgnoreExtraProperties;
+
+@IgnoreExtraProperties
 public class User {
     private String Name;
     private String Email;
     private String Password;
+
+    public User(){
+
+    }
 
     public User(String name, String email, String password) {
         Name = name;
